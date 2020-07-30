@@ -1,0 +1,35 @@
+VERSION="2020";
+LANGUAGES="en","ga";
+MATRIX="CIP02";
+SUBJECT-CODE="A01";
+SUBJECT-AREA[en]="Census of Population";
+SUBJECT-AREA[ga]="Daonáireamh";
+DESCRIPTION[en]="Persons in Private Households 2011 to 2016";
+TITLE[en]="Persons in Private Households 2011 to 2016";
+CONTENTS[en]="Persons in Private Households 2011 to 2016";
+DESCRIPTION[ga]="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+TITLE[ga]="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+CONTENTS[ga]="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+DIMENSION("TLIST(A1)")[en]=(NAME="Census Year",INDEX=0,ROLE="TIME");
+DIMENSION("TLIST(A1)")[ga]=(NAME="Bliain an Daonáirimh",INDEX=0,ROLE="TIME");
+DIMENSION("TLIST(A1)")[en]=ITEMS:ITEM("2011")="2011","ITEM("2016")="2016";
+DIMENSION("TLIST(A1)")[ga]=ITEMS:ITEM("2011")="2011","ITEM("2016")="2016";
+DIMENSION("Statistic")[en]=(NAME="Statistic",INDEX=1,ROLE="STATISTIC,"UNITS"="Number","PRECISION"=0");
+DIMENSION("Statistic")[ga]=(NAME="Statistic",INDEX=1,ROLE="STATISTIC,"UNITS"="Number","PRECISION"=0");
+DIMENSION("Statistic")[en]=ITEMS:ITEM("EY013C01")="Total private households",ITEM("EY013C02")="All persons in private households";
+DIMENSION("Statistic")[ga]=ITEMS:ITEM("EY013C01")="Teaghlaigh phríobháideacha iomlána",ITEM("EY013C02")="Gach duine i dteaghlaigh phríobháideacha";
+DIMENSION("C03367V04051")[en]=(NAME="Type of Household",ROLE="CLASSIFICATION",INDEX=2);
+DIMENSION("C03367V04051")[ga]=(NAME="Cineál Teaghlaigh",ROLE="CLASSIFICATION",INDEX=2);
+DIMENSION("C03367V04051")[en]=ITEMS:ITEM("-")="All households",ITEM("1")="Permanent private",ITEM("2")="Temporary private";
+DIMENSION("C03367V04051")[ga]=ITEMS:ITEM("-")="Gach teaghlach",ITEM("1")="Buan agus príobháideach",ITEM("2")="Sealadach agus príobháideach";
+DIMENSION("C03367V04052")[en]=(NAME="County and City",NAME[ga]="Contae agus Cathair",ROLE="CLASSIFICATION",INDEX=3);
+DIMENSION("C03367V04052")[ga]=(NAME="Contae agus Cathair",ROLE="CLASSIFICATION",INDEX=3);
+DIMENSION("C03367V04052")[en]=ITEMS:ITEM("IE")="State",ITEM("CC")="Cork County",ITEM("CK")="Cork City";
+DIMENSION("C03367V04052")[ga]=ITEMS:ITEM("IE")="An Stát",ITEM("CC")="Contae Chorcaí",ITEM("CK")="Cathair Chorcaí";
+NOTE[en]="This is an important note";
+NOTE[ga]="Is nóta tábhachtach é seo";
+COPYRIGHT_URL="www.cso.ie";
+OFFICIAL_STATISTICS="TRUE";
+DATA=
+4510409 115461 396839 4500569 115234 396188 9840 227 651 
+4676648 120980 414062 4666376 120802 413327 10272 178 735;
