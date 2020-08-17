@@ -1,5 +1,5 @@
 # PXS Standard
-This repository is used to enable the development of the new Standard for exchanging and disseminating statistical data and meta-data. 
+This repository is used to enable the development of the new **PXS Standard** for exchanging and disseminating statistical data and meta-data. 
 
 # Introduction
 The PX Format is well established for the presentation and representation of statistical data. Its advantages include compactness and ease of reading, both for machines
