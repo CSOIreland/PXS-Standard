@@ -1,5 +1,5 @@
 PXS="0.1";
-HREF="https://cdn.jsdelivr.net/gh/CSOIreland/PXS-Standard/sample.pxs";
+HREF="https://cdn.jsdelivr.net/gh/CSOIreland/PXS-Standard/sample/0.1.draft.pxs";
 MATRIX="CIP02";
 LANGUAGES=["en","ga"];
 TITLE<"en">="Persons in Private Households 2011 to 2016";
@@ -9,8 +9,8 @@ DESCRIPTION<"ga">="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
 UPDATED="2020-08-20T13:54.143";
 NOTE<"en">="This is an [b]important[/b] note";
 NOTE<"ga">="Is nóta [b]tábhachtach[/b] é seo";
-COPYRIGHT("NAME")="Central Statistics Office, Ireland";
-COPYRIGHT("HREF")="https://www.cso.ie";
+COPYRIGHT("NAME")="Sample";
+COPYRIGHT("HREF")="https://www.sample.ie";
 INDEXES=["STAT12","TLIST(A1)","C03367V04051","C03367V04052"];
 ROLE("METRIC")="STAT12";
 ROLE("TIME")="TLIST(A1)";
