@@ -1,5 +1,5 @@
 # PXS (PX Standard)
-The **PXS** or **PX Standard** is a **DRAFT** for standardising the exchange and dissemination of statistical data and meta-data over a `text/plain` file type.
+The **PXS** or **PX Standard** is about standardising the exchange and dissemination of statistical data and meta-data over a `text/plain` file type.
 
 Versions:
 * [PXS 0.1 `DRAFT`](https://github.com/CSOIreland/PXS-Standard/wiki/PXS-0.1-(DRAFT))
@@ -7,7 +7,7 @@ Versions:
 # Introduction
 The current [PX Format](https://github.com/CSOIreland/PXS-Standard/files/5095402/px-file_format_specification_2013.pdf) is a well established format for the presentation and representation of statistical data. Its advantages include compactness and ease of reading, both for machines and humans. However, a number of shortcomings have been identified, mainly around the area of ambiguous dimensions, the presentation of data and the syntaxt/schema.
 
-This project attempts to deal with these problems by upgrading the **PX Format** to the new standard **PXS**.
+The **PXS** attempts to deal with these problems by upgrading the **PX Format** to the new standard.
 
 ## Format Vs Standard
 
