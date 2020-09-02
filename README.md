@@ -10,7 +10,7 @@ The Wiki centrally hosts the versioning of the specifications about the standard
 Please raise a new [Issue](https://github.com/CSOIreland/PXS-Standard/issues/new/choose) in GitHub.
 
 # Introduction
-The current [PX Format](https://github.com/CSOIreland/PXS-Standard/files/5095402/px-file_format_specification_2013.pdf) is a well established format for the presentation and representation of statistical data. Its advantages include compactness and ease of reading, both for machines and humans. However, a number of shortcomings have been identified, mainly around the area of ambiguous dimensions, the presentation of data and the syntaxt/schema.
+The current [PX Format](https://github.com/CSOIreland/PXS-Standard/files/5095402/px-file_format_specification_2013.pdf) is a well established format for the presentation and representation of statistical data. Its advantages include compactness and ease of reading, both for machines and humans. However, a number of shortcomings have been identified, mainly around the area of ambiguous dimensions, the presentation of data and the syntax.
 
 The **PXS** attempts to deal with these problems by upgrading the [PX Format](https://github.com/CSOIreland/PXS-Standard/files/5095402/px-file_format_specification_2013.pdf) to the new standard.
 
