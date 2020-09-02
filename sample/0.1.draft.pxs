@@ -39,6 +39,6 @@ DIMENSION("C04366V01152")("CODES")=["-","CRK","DBL"];
 DIMENSION("C04366V01152")("VALUES")<"en">=["State","Cork", "Dublin"];
 DIMENSION("C04366V01152")("VALUES")<"ga">=["Luaigh","Chorcaí", "Baile Átha Cliath"];
 DIMENSION{"C04366V01152}("GEO")="https://cdn.cso.ie/static/map/en/ie_county_31.json";
-EXTENSION("ANYTHING")="Custom entry";
+EXTENSION{"ANYTHING"}="Custom entry";
 DATA=[4510409,115461,396839,4500569,115234,396188,9840,227,651,4676648,120980,414062,4666376,120802,413327,10272,178,735];
 STATUS=["Checked","Checked","Checked",null,null,true,"Pending","Pending","Checked","Checked","Checked",null,null,true,"Pending","Pending"];
