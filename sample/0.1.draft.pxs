@@ -1,44 +1,66 @@
 PXS="0.1";
+
 HREF="https://cdn.jsdelivr.net/gh/CSOIreland/PXS-Standard/sample/0.1.draft.pxs";
+
 MATRIX="CIP02";
+
 LANGUAGES=["en","ga"];
+
 TITLE<"en">="Persons in Private Households 2011 to 2016";
 TITLE<"ga">="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+
 DESCRIPTION<"en">="Persons in Private Households 2011 to 2016";
 DESCRIPTION<"ga">="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+
 UPDATED="2020-08-20T13:54.143";
+
 NOTE<"en">="This is an [b]important[/b] note";
 NOTE<"ga">="Is nóta [b]tábhachtach[/b] é seo";
+
+COPYRIGHT("CODE")="SMP";
 COPYRIGHT("NAME")="Sample";
 COPYRIGHT("HREF")="https://www.sample.ie";
-INDEXES=["STAT12","TLIST(A1)","C03367V04051","C03367V04052"];
+
+INDEXES=["STAT12","TLIST(A1)","C03367V04051","C04366V01152"];
+
 ROLE("METRIC")="STAT12";
 ROLE("TIME")="TLIST(A1)";
-ROLE("CLASSIFICATION")=["C03367V04051","C03367V04052"];
-DIMENSION("STAT12")("NAME")<"en">="Statistic";
-DIMENSION("STAT12")("NAME")<"ga">="Staidrimh";
-DIMENSION("STAT12")("UNITS")<"en">="Number";
-DIMENSION("STAT12")("UNITS")<"ga">="Uimhir";
-DIMENSION("STAT12")("PRECISION")=0;
-DIMENSION("STAT12")("CODES")=["EY013C01","EY013C02"];
-DIMENSION("STAT12")("VALUES")<"en">=["Total private households","All persons in private households"];
-DIMENSION("STAT12")("VALUES")<"ga">=["Teaghlaigh phríobháideacha iomlána","Gach duine i dteaghlaigh phríobháideacha"];
-DIMENSION("TLIST(A1)")("NAME")<"en">="Census Year";
-DIMENSION("TLIST(A1)")("NAME")<"ga">="Bliain an Daonáirimh";
-DIMENSION("TLIST(A1)")("VALUES")<"en">=["2011","2016"];
-DIMENSION("TLIST(A1)")("CODES")=["2011","2016"];
-DIMENSION("TLIST(A1)")("VALUES")<"ga">=["2011","2016"];
-DIMENSION("C03367V04051")("NAME")<"en">="Type of Household";
-DIMENSION("C03367V04051")("NAME")<"ga">="Cineál Teaghlaigh";
-DIMENSION("C03367V04051")("CODES")=["-","C1","C2"];
-DIMENSION("C03367V04051")("VALUES")<"en">=["All households","Permanent Private","Temporary Private"];
-DIMENSION("C03367V04051")("VALUES")<"ga">=["Gach teaghlach","Buan agus príobháideach","Sealadach agus príobháideach"];
-DIMENSION("C04366V01152")("NAME")<"en">="County";
-DIMENSION("C04366V01152")("NAME")<"ga">="Contae";
-DIMENSION("C04366V01152")("CODES")=["-","CRK","DBL"];
-DIMENSION("C04366V01152")("VALUES")<"en">=["State","Cork", "Dublin"];
-DIMENSION("C04366V01152")("VALUES")<"ga">=["Luaigh","Chorcaí", "Baile Átha Cliath"];
-DIMENSION{"C04366V01152}("GEO")="https://cdn.cso.ie/static/map/en/ie_county_31.json";
+ROLE("CLASSIFICATION")=["C03367V04051","C04366V01152"];
+ROLE("GEO")="C04366V01152";
+
+GEO="https://cdn.cso.ie/static/map/en/ie_county_31.json";
+
+OFFICIAL=false;
+
+DIMENSION{"STAT12"}("NAME")<"en">="Statistic";
+DIMENSION{"STAT12"}("NAME")<"ga">="Staidrimh";
+DIMENSION{"STAT12"}("UNITS")<"en">="Number";
+DIMENSION{"STAT12"}("UNITS")<"ga">="Uimhir";
+DIMENSION{"STAT12"}("PRECISION")=0;
+DIMENSION{"STAT12"}("CODES")=["EY013C01","EY013C02"];
+DIMENSION{"STAT12"}("VALUES")<"en">=["Total private households","All persons in private households"];
+DIMENSION{"STAT12"}("VALUES")<"ga">=["Teaghlaigh phríobháideacha iomlána","Gach duine i dteaghlaigh phríobháideacha"];
+
+DIMENSION{"TLIST(A1)"}("NAME")<"en">="Census Year";
+DIMENSION{"TLIST(A1)"}("NAME")<"ga">="Bliain an Daonáirimh";
+DIMENSION{"TLIST(A1)"}("CODES")=["2011","2016"];
+DIMENSION{"TLIST(A1)"}("VALUES")<"en">=["2011","2016"];
+DIMENSION{"TLIST(A1)"}("VALUES")<"ga">=["2011","2016"];
+
+DIMENSION{"C03367V04051"}("NAME")<"en">="Type of Household";
+DIMENSION{"C03367V04051"}("NAME")<"ga">="Cineál Teaghlaigh";
+DIMENSION{"C03367V04051"}("CODES")=["-","C1","C2"];
+DIMENSION{"C03367V04051"}("VALUES")<"en">=["All households","Permanent Private","Temporary Private"];
+DIMENSION{"C03367V04051"}("VALUES")<"ga">=["Gach teaghlach","Buan agus príobháideach","Sealadach agus príobháideach"];
+
+DIMENSION{"C04366V01152"}("NAME")<"en">="County";
+DIMENSION{"C04366V01152"}("NAME")<"ga">="Contae";
+DIMENSION{"C04366V01152"}("CODES")=["-","CRK","DBL"];
+DIMENSION{"C04366V01152"}("VALUES")<"en">=["State","Cork", "Dublin"];
+DIMENSION{"C04366V01152"}("VALUES")<"ga">=["Luaigh","Chorcaí", "Baile Átha Cliath"];
+
 EXTENSION{"ANYTHING"}="Custom entry";
+
 DATA=[4510409,115461,396839,4500569,115234,396188,9840,227,651,4676648,120980,414062,4666376,120802,413327,10272,178,735];
+
 STATUS=["Checked","Checked","Checked",null,null,true,"Pending","Pending","Checked","Checked","Checked",null,null,true,"Pending","Pending"];
