@@ -1,0 +1,89 @@
+PXS="0.2";
+
+HREF="https://cdn.jsdelivr.net/gh/CSOIreland/PXS-Standard/sample/0.2.draft.pxs";
+
+MATRIX="CIP02";
+
+LANGUAGES=["en","ga"];
+
+TITLE["en"]="Persons in Private Households 2011 to 2016";
+TITLE["ga"]="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+
+DESCRIPTION["en"]="Persons in Private Households 2011 to 2016";
+DESCRIPTION["ga"]="Daoine i dTeaghlaigh Phríobháideacha 2011 go 2016";
+
+UPDATED="2020-08-20T13:54.143";
+
+NOTE["en"]="This is an [b]important[/b] note";
+NOTE["ga"]="Is nóta [b]tábhachtach[/b] é seo";
+
+COPYRIGHT("CODE")="SMP";
+COPYRIGHT("NAME")="Sample";
+COPYRIGHT("HREF")="https://www.sample.ie";
+
+INDEXES=["STAT12","TLIST(A1)","C03367V04051","C04366V01152"];
+
+ROLE("METRIC")="STAT12";
+ROLE("TIME")="TLIST(A1)";
+ROLE("CLASSIFICATION")=["C03367V04051","C04366V01152"];
+ROLE("GEO")="C04366V01152";
+
+GEOLINK="https://cdn.cso.ie/static/map/en/ie_county_31.json";
+
+OFFICIAL=false;
+
+DIMENSION("STAT12"){"NAME"}["en"]="Statistic";
+DIMENSION("STAT12"){"NAME"}["ga"]="Staidrimh";
+DIMENSION("STAT12"){"UNITS"}["en"]="Number";
+DIMENSION("STAT12"){"UNITS"}["ga"]="Uimhir";
+DIMENSION("STAT12"){"PRECISION"}=0;
+DIMENSION("STAT12"){"CODES"}=["EY013C01","EY013C02"];
+DIMENSION("STAT12"){"VALUES"}["en"]=["Total private households","All persons in private households"];
+DIMENSION("STAT12"){"VALUES"}["ga"]=["Teaghlaigh phríobháideacha iomlána","Gach duine i dteaghlaigh phríobháideacha"];
+DIMENSION("STAT12"){"COMMENT"}["en"]="Comment about the dimension";
+DIMENSION("STAT12"){"COMMENT"}["ga"]="Déan trácht ar an toise";
+DIMENSION("STAT12"){"OBSERVATIONS"}["en"]=[null, "Observation on the second variable];
+DIMENSION("STAT12"){"OBSERVATIONS"}["ga"]=[null,"Breathnú ar an dara athróg"];
+
+DIMENSION("TLIST(A1)"){"NAME"}["en"]="Census Year";
+DIMENSION("TLIST(A1)"){"NAME"}["ga"]="Bliain an Daonáirimh";
+DIMENSION("TLIST(A1)"){"CODES"}=["2011","2016"];
+DIMENSION("TLIST(A1)"){"VALUES"}["en"]=["2011","2016"];
+DIMENSION("TLIST(A1)"){"VALUES"}["ga"]=["2011","2016"];
+
+DIMENSION("C03367V04051"){"NAME"}["en"]="Type of Household";
+DIMENSION("C03367V04051"){"NAME"}["ga"]="Cineál Teaghlaigh";
+DIMENSION("C03367V04051"){"CODES"}=["-","C1","C2"];
+DIMENSION("C03367V04051"){"VALUES"}["en"]=["All households","Permanent Private","Temporary Private"];
+DIMENSION("C03367V04051"){"VALUES"}["ga"]=["Gach teaghlach","Buan agus príobháideach","Sealadach agus príobháideach"];
+
+DIMENSION("C04366V01152"){"NAME"}["en"]="County";
+DIMENSION("C04366V01152"){"NAME"}["ga"]="Contae";
+DIMENSION("C04366V01152"){"CODES"}=["-","CRK","DBL"];
+DIMENSION("C04366V01152"){"VALUES"}["en"]=["State","Cork", "Dublin"];
+DIMENSION("C04366V01152"){"VALUES"}["ga"]=["Luaigh","Chorcaí", "Baile Átha Cliath"];
+
+EXTENSION("ANYTHING")="Custom entry";
+
+DATA=[
+4510409,null,
+null,4500569,
+null,396188,
+9840,227,
+651,null,
+null,414062,
+null,null,
+null,10272,
+null,735
+];
+
+STATUS=[
+"Checked","Checked",
+"Checked",false,
+null,true,
+"Pending","Pending",
+"Checked","Checked",
+"Checked",null,
+null,true,
+"Pending","Pending"
+];
