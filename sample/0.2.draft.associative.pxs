@@ -42,8 +42,8 @@ DIMENSION("STAT12"){"VALUES"}["en"]=["Total private households","All persons in 
 DIMENSION("STAT12"){"VALUES"}["ga"]=["Teaghlaigh phríobháideacha iomlána","Gach duine i dteaghlaigh phríobháideacha"];
 DIMENSION("STAT12"){"COMMENT"}["en"]="Comment about the dimension";
 DIMENSION("STAT12"){"COMMENT"}["ga"]="Déan trácht ar an toise";
-DIMENSION("STAT12"){"OBSERVATIONS"}["en"]=[1:"Observation on the second variable];
-DIMENSION("STAT12"){"OBSERVATIONS"}["ga"]=[1:"Breathnú ar an dara athróg"];
+DIMENSION("STAT12"){"OBSERVATIONS"}["en"]=[0:"Observation on the second variable];
+DIMENSION("STAT12"){"OBSERVATIONS"}["ga"]=[0:"Breathnú ar an dara athróg"];
 
 DIMENSION("TLIST(A1)"){"NAME"}["en"]="Census Year";
 DIMENSION("TLIST(A1)"){"NAME"}["ga"]="Bliain an Daonáirimh";
@@ -60,8 +60,8 @@ DIMENSION("C03367V04051"){"VALUES"}["ga"]=["Gach teaghlach","Buan agus príobhá
 DIMENSION("C04366V01152"){"NAME"}["en"]="County";
 DIMENSION("C04366V01152"){"NAME"}["ga"]="Contae";
 DIMENSION("C04366V01152"){"CODES"}=["-","CRK","DBL"];
-DIMENSION("C04366V01152"){"VALUES"}["en"]=[1:"State",2:"Cork", 3:"Dublin"];
-DIMENSION("C04366V01152"){"VALUES"}["ga"]=[1:"Luaigh",2:"Chorcaí",3:"Baile Átha Cliath"];
+DIMENSION("C04366V01152"){"VALUES"}["en"]=[0:"State",1:"Cork", 2:"Dublin"];
+DIMENSION("C04366V01152"){"VALUES"}["ga"]=[0:"Luaigh",1:"Chorcaí",2:"Baile Átha Cliath"];
 
 EXTENSION("ANYTHING")="Custom entry";
 
