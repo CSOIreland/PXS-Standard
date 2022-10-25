@@ -56,12 +56,14 @@ DIMENSION("C03367V04051"){"NAME"}["ga"]="Cineál Teaghlaigh";
 DIMENSION("C03367V04051"){"CODES"}=["-","C1","C2"];
 DIMENSION("C03367V04051"){"VALUES"}["en"]=["All households","Permanent Private","Temporary Private"];
 DIMENSION("C03367V04051"){"VALUES"}["ga"]=["Gach teaghlach","Buan agus príobháideach","Sealadach agus príobháideach"];
+DIMENSION("C03367V04051"){"ELIMINATION"} = "-";
 
 DIMENSION("C04366V01152"){"NAME"}["en"]="County";
 DIMENSION("C04366V01152"){"NAME"}["ga"]="Contae";
 DIMENSION("C04366V01152"){"CODES"}=["-","CRK","DBL"];
 DIMENSION("C04366V01152"){"VALUES"}["en"]=["State","Cork", "Dublin"];
 DIMENSION("C04366V01152"){"VALUES"}["ga"]=["Luaigh","Chorcaí", "Baile Átha Cliath"];
+DIMENSION("C04366V01152"){"ELIMINATION"} = "-";
 
 EXTENSION("ANYTHING")="Custom entry";
 
