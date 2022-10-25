@@ -66,14 +66,15 @@ DIMENSION("C04366V01152"){"VALUES"}["ga"]=["Luaigh","Chorcaí", "Baile Átha Cli
 EXTENSION("ANYTHING")="Custom entry";
 
 STATUS=[
-"Checked","Checked",
-"Checked",false,
-null,true,
-"Pending","Pending",
+"Checked",null,
+null,"Pending",
+null,"Pending",
 "Checked","Checked",
 "Checked",null,
-null,true,
-"Pending","Pending"
+null,"Pending",
+null,null,
+null,"Pending",
+null,"Checked"
 ];
 
 DATA=[
