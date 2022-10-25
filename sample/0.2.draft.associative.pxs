@@ -1,6 +1,6 @@
 PXS="0.2";
 
-HREF="https://cdn.jsdelivr.net/gh/CSOIreland/PXS-Standard/sample/0.2.draft.pxs";
+LINK="https://cdn.jsdelivr.net/gh/CSOIreland/PXS-Standard/sample/0.2.draft.pxs";
 
 MATRIX="CIP02";
 
@@ -19,7 +19,7 @@ NOTE["ga"]="Is nóta [b]tábhachtach[/b] é seo";
 
 COPYRIGHT("CODE")="SMP";
 COPYRIGHT("NAME")="Sample";
-COPYRIGHT("HREF")="https://www.sample.ie";
+COPYRIGHT("LINK")="https://www.sample.ie";
 
 INDEXES=["STAT12","TLIST(A1)","C03367V04051","C04366V01152"];
 
