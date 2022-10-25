@@ -6,7 +6,6 @@ The **PXS** or **PX Standard** is about standardising the exchange and dissemina
 The Wiki centrally hosts the versioning of the specifications about the standard:
 * [PXS 0.1 `DRAFT`](https://github.com/CSOIreland/PXS-Standard/wiki/PXS-0.1-(DRAFT))
 * [PXS 0.2 `DRAFT`](https://github.com/CSOIreland/PXS-Standard/wiki/PXS-0.2-(DRAFT)) _Feedback from [Statistics Finland](https://www.stat.fi/index_en.html) merged_
-* **PXS 0.3 `DRAFT`** Work in Progress...
 
 ## [Questions](https://github.com/CSOIreland/PXS-Standard/issues/new/choose)
 Please raise a new [Issue](https://github.com/CSOIreland/PXS-Standard/issues/new/choose) in GitHub.
