@@ -21,9 +21,9 @@ COPYRIGHT("CODE")="SMP";
 COPYRIGHT("NAME")="Sample";
 COPYRIGHT("LINK")="https://www.sample.ie";
 
-INDEXES=["STAT12","TLIST(A1)","C03367V04051","C04366V01152"];
+INDEXES=["STAT","TLIST(A1)","C03367V04051","C04366V01152"];
 
-ROLE("METRIC")="STAT12";
+ROLE("METRIC")="STAT";
 ROLE("TIME")="TLIST(A1)";
 ROLE("CLASSIFICATION")=["C03367V04051","C04366V01152"];
 ROLE("GEO")="C04366V01152";
@@ -32,17 +32,17 @@ GEOLINK="https://cdn.cso.ie/static/map/en/ie_county_31.json";
 
 OFFICIAL=false;
 
-DIMENSION("STAT12"){"NAME"}["en"]="Statistic";
-DIMENSION("STAT12"){"NAME"}["ga"]="Staidrimh";
-DIMENSION("STAT12"){"UNITS"}["en"]="Number";
-DIMENSION("STAT12"){"UNITS"}["ga"]="Uimhir";
-DIMENSION("STAT12"){"PRECISION"}=0;
-DIMENSION("STAT12"){"CODES"}=["EY013C01","EY013C02"];
-DIMENSION("STAT12"){"VALUES"}["en"]=["Total private households","All persons in private households"];
-DIMENSION("STAT12"){"VALUES"}["ga"]=["Teaghlaigh phríobháideacha iomlána","Gach duine i dteaghlaigh phríobháideacha"];
-DIMENSION("STAT12"){"COMMENT"}["en"]="Comment about the dimension";
-DIMENSION("STAT12"){"COMMENT"}["ga"]="Déan trácht ar an toise";
-DIMENSION("STAT12"){"OBSERVATIONS"}["en"]=[0:"Observation on the second variable];
+DIMENSION("STAT"){"NAME"}["en"]="Statistic";
+DIMENSION("STAT"){"NAME"}["ga"]="Staidrimh";
+DIMENSION("STAT"){"UNITS"}["en"]="Number";
+DIMENSION("STAT"){"UNITS"}["ga"]="Uimhir";
+DIMENSION("STAT"){"PRECISION"}=0;
+DIMENSION("STAT"){"CODES"}=["EY013C01"];
+DIMENSION("STAT"){"VALUES"}["en"]=["Total private households"];
+DIMENSION("STAT"){"VALUES"}["ga"]=["Teaghlaigh phríobháideacha iomlána","Gach duine i dteaghlaigh phríobháideacha"];
+DIMENSION("STAT"){"COMMENT"}["en"]="Comment about the dimension";
+DIMENSION("STAT"){"COMMENT"}["ga"]="Déan trácht ar an toise";
+DIMENSION("STAT"){"OBSERVATIONS"}["en"]=[0:"Observation on the second variable];
 DIMENSION("STAT12"){"OBSERVATIONS"}["ga"]=[0:"Breathnú ar an dara athróg"];
 
 DIMENSION("TLIST(A1)"){"NAME"}["en"]="Census Year";
@@ -56,15 +56,17 @@ DIMENSION("C03367V04051"){"NAME"}["ga"]="Cineál Teaghlaigh";
 DIMENSION("C03367V04051"){"CODES"}=["-","C1","C2"];
 DIMENSION("C03367V04051"){"VALUES"}["en"]=["All households","Permanent Private","Temporary Private"];
 DIMENSION("C03367V04051"){"VALUES"}["ga"]=["Gach teaghlach","Buan agus príobháideach","Sealadach agus príobháideach"];
+DIMENSION("C03367V04051"){"ELIMINATION"} = "-";
 
 DIMENSION("C04366V01152"){"NAME"}["en"]="County";
 DIMENSION("C04366V01152"){"NAME"}["ga"]="Contae";
 DIMENSION("C04366V01152"){"CODES"}=["-","CRK","DBL"];
 DIMENSION("C04366V01152"){"VALUES"}["en"]=[0:"State",1:"Cork", 2:"Dublin"];
 DIMENSION("C04366V01152"){"VALUES"}["ga"]=[0:"Luaigh",1:"Chorcaí",2:"Baile Átha Cliath"];
+DIMENSION("C04366V01152"){"ELIMINATION"} = "-";
 
 EXTENSION("ANYTHING")="Custom entry";
 
-DATA=[0:4510409,3:4500569,5:396188,6:9840,7:227,8:651,11:414062,17:735];
+STATUS=[0:"Checked",3:"Pending",5:"Pending",6:"Checked",7:"Checked",8:"Checked",11:"Pending",15:"Pending",17:"Checked"];
 
-STATUS=[0:"Checked",1:"Checked",2:"Checked",5:true,6:"Pending",7:"Pending",8:"Checked",9:"Checked",10:"Checked",13:true,14:"Pending",15:"Pending"];
+DATA=[0:4510409,3:4500569,5:396188,6:9840,7:227,8:651,11:414062,15:10272,17:735];
